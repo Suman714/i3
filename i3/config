@@ -62,7 +62,7 @@ bindsym $mod+e exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 #Borders
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 3
                           # class                 border  backgr. text    indicator child_border
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
@@ -192,8 +192,8 @@ bindsym $mod+p mode "resize"
 #bar {
 #        status_command i3status
 #}
-exec_always feh --bg-scale $HOME/Dropbox/wallpaper/wallhaven-v9v3r5.jpg
+exec_always feh --bg-scale $HOME/Dropbox/wallpaper/wallhaven-g7r853.png
 # for transparency
 exec --no-startup-id compton
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always xrandr --output eDP --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1-0 --mode 1366x768 --pos 1920x0 --rotate normal
