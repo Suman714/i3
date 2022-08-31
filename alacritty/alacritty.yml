@@ -3,8 +3,8 @@ colors:
   author: Folke
   # Default colors
   primary:
-    background: '0x1a1b26'
-    foreground: '0xc0caf5'
+    background: '0x0a0a0a'
+    foreground: '0xf5f5f5'
 
   # Normal colors
   normal:
@@ -37,19 +37,19 @@ window:
 
 font: 
   normal:
-    family: MesloLGS NF
+    family: Hack NF
     style: regular
 
     bold:
-    family: MesloLGS NF
+    family: Hack NF
     style: Bold
 
   italic:
-    family: MesolLGS NF
+    family: Hack NF
     style: Italic
 
   bold_italic:
-    family: MesloLGS NF
+    family: Hack NF
     style: Bold Italic
 
   size: 8
