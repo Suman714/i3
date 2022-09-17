@@ -84,6 +84,12 @@ return packer.startup(function(use)
   use "rcarriga/nvim-dap-ui"
   use "ravenxrz/DAPInstall.nvim"
 
+  --Harpoon
+  use "ThePrimeagen/harpoon"
+
+  --Lualine
+  use "nvim-lualine/lualine.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
