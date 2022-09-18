@@ -36,10 +36,14 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
 -- Close buffers
-keymap("n", "<leader>c", "<cmd>bdelet!<CR>", opts)
+keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
+
+-- Insert --
+-- Press jk fast to enter
+keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -48,8 +52,8 @@ keymap("v", ">", ">gv", opts)
 
 -- Plugins --
 
--- Netrw
-keymap("n", "<leader>e", ":Lexplore<CR>", opts)
+-- NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
 keymap("n", "<C-f>", ":Telescope find_files<CR>", opts)

@@ -1,3 +1,4 @@
+vim.opt.backup = false                          -- creates a backup file
 vim.opt.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard
 vim.opt.cmdheight = 1                           -- more space in the neovim command line for displaying messages
 vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
@@ -22,10 +23,7 @@ vim.opt.writebackup = false                     -- if a file is being edited by 
 vim.opt.expandtab = true                        -- convert tabs to spaces
 vim.opt.shiftwidth = 2                          -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 2                             -- insert 2 spaces for a tab
-vim.opt.guicursor=""
 vim.opt.cursorline = true                       -- highlight the current line
-vim.opt.cursorcolumn = true
-vim.opt.rnu = true
 vim.opt.number = true                           -- set numbered lines
 vim.opt.laststatus = 3
 vim.opt.showcmd = false
