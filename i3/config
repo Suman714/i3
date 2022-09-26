@@ -193,7 +193,7 @@ bindsym $mod+p mode "resize"
 #bar {
 #        status_command i3status
 #}
-exec_always feh --bg-scale $HOME/Repos/i3/Wallpapers/wallhaven-j3my3y.png
+exec_always feh --bg-scale $HOME/Dropbox/Wallpapers/wallhaven-8o23gk.jpg
 # for transparency
 exec --no-startup-id compton
 exec --no-startup-id $HOME/.config/polybar/launch.sh
