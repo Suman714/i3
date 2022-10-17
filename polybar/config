@@ -76,7 +76,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %mountpoint%: %percentage_used%% of %total%
+label-mounted = %mountpoint%: %free%% free
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 label-mounted-underline = #9f78e1 
