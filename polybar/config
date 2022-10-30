@@ -1,10 +1,10 @@
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #B30a0a0a
+background = #faf5f5
 background-alt = #bf212532
 ;foreground = ${xrdb:color7:#222}
-foreground = #f5f5f5
-foreground-alt = #ffffff
+foreground = #0a0303
+foreground-alt = #1f86ed
 primary = #19aedf
 secondary = #e60053
 alert = #bd2c40
@@ -39,9 +39,9 @@ font-2 = CaskaydiaCove NF:pixelsize=10;1
 
 modules-left = xwindow i3
 modules-center = date
-modules-right = filesystem pulseaudio wlan eth battery temperature 
+modules-right = filesystem wlan eth battery temperature 
 
-separator = |
+separator = 
 
 tray-position = right
 tray-padding = 2
@@ -96,8 +96,8 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-background = #3aa7f0 
+label-focused-underline= #30eff2
 label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
@@ -203,25 +203,25 @@ format-underline = #0a6cf5
 label = %date% %time%
 
 [module/pulseaudio-arrow]
-	type = custom/text
-	content = "%{T3}%{T-}"
-	content-foreground = ${colors.blue}
-	content-background = ${colors.yellow}
+type = custom/text
+content = "%{T3}%{T-}"
+content-foreground = ${colors.blue}
+content-background = ${colors.yellow}
 
 
 [module/pulseaudio]
-	type = internal/pulseaudio
-	format-volume-background = ${colors.blue}
-	format-volume-foreground = ${colors.foreground-alt}
-	format-volume-padding = 0
-	format-volume-prefix = "%{T2}   %{T-}"
-	format-volume = <label-volume>
-	format-volume-underline = ${colors.foreground-alt}
-	label-volume = %percentage%%
-	label-muted = "%{T2}  %{T-}muted"
-	label-muted-foreground = ${colors.background}
-	label-muted-background = ${colors.foreground-alt}
-	label-muted-padding = 0
+type = internal/pulseaudio
+format-volume-background = ${colors.blue}
+format-volume-foreground = ${colors.foreground-alt}
+format-volume-padding = 0
+format-volume-prefix = "%{T2}   %{T-}"
+format-volume = <label-volume>
+format-volume-underline = ${colors.foreground-alt}
+label-volume = %percentage%%
+label-muted = "%{T2}  %{T-}muted"
+label-muted-foreground = ${colors.background}
+label-muted-background = ${colors.foreground-alt}
+label-muted-padding = 0
 
 [module/battery]
 type = internal/battery
@@ -231,7 +231,7 @@ full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = #ffb52a
-label-charging = Changing %percentage%%
+label-charging = Charging %percentage%%
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
