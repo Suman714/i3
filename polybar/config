@@ -1,9 +1,9 @@
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #faf5f5
+background = #BF090745
 background-alt = #bf212532
 ;foreground = ${xrdb:color7:#222}
-foreground = #0a0303
+foreground = #f7fafa
 foreground-alt = #1f86ed
 primary = #19aedf
 secondary = #e60053
