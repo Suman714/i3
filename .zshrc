@@ -20,4 +20,4 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%F{51}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
 
-PROMPT=' %(?.%F{184}√.%F{red}?%?)%f %B%F{cyan}%~%f%b '
+PROMPT=' %(?.%F{184}√.%F{red}?%?)%f %B%F{9}%~%f%b '
