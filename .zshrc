@@ -6,9 +6,6 @@ bindkey -v
 
 autoload -Uz compinit && compinit
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 #Zsh prompt
 precmd() { print "" }
 autoload -Uz vcs_info
