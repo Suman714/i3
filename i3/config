@@ -196,9 +196,9 @@ bindsym $mod+p mode "resize"
 # clip copyq maim
 
 ##  Screenshots in files
-bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
-bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-current.png"
-bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-selected.png"
+bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/screenshot/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
+bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/Pictures/screenshot/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-current.png"
+bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER/Pictures/screenshot/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-selected.png"
 
 ## Screenshots in clipboards
 bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection clipboard -t image/png
@@ -210,7 +210,7 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 #bar {
 #        status_command i3status
 #}
-exec_always feh --bg-max $HOME/Disk/Wallpaper/wallhaven-gpjd9e.jpg
+exec_always feh --bg-max $HOME/Pictures/Wallpapers/wallhaven-3l97m9.png
 # for transparency
 exec --no-startup-id compton
 exec --no-startup-id $HOME/.config/polybar/launch.sh
